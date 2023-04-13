@@ -1,1 +1,5 @@
+### get all competitions
 get "https://api.football-data.org/v4/competitions"
+
+### get all teams
+get "https://api.football-data.org/v4/teams/2061"
