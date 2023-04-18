@@ -2,4 +2,5 @@
 get "https://api.football-data.org/v4/competitions"
 
 ### get all teams
-get "https://api.football-data.org/v4/teams/2061"
+get "https://api.football-data.org/v4/competitions/2021/teams"
+X-Auth-Token: 5f669e4a68d046d3bb0b03729bb66a46
