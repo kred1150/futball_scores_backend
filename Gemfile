@@ -50,3 +50,6 @@ gem "http"
 
 gem 'rack-cors'
 
+gem "rest-client", "~> 2.1"
+gem "dotenv"
+

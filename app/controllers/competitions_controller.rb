@@ -7,7 +7,7 @@ class CompetitionsController < ApplicationController
   end
 
   def test
-    response = HTTP.auth("#{Rails.application.credentials.futball_api_key}").get("http://api.football-data.org/v4/competitions/PL/standings")
+    response = HTTP.basic_auth(:user => "kred1150@gmail.com", :pass => "#{Rails.application.credentials.futball_api_key}").get("http://api.football-data.org/v4/competitions/PL/standings")
     pp response
     standings = JSON.parse(response.body)
     render json: standings.as_json
